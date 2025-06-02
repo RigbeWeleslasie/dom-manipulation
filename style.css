@@ -1,0 +1,131 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8fafc;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+   
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+    border-bottom-left-radius:  0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(56, 142, 60, 0.08);
+}
+
+#title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    opacity: 0.92;
+    margin-top: 0.5rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+}
+
+.lists {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+}
+
+.list-container {
+    background: #fff;
+    border-radius:  0.75rem;
+    box-shadow: 0 4px 16px rgba(56, 142, 60, 0.07);
+    padding: 2rem;
+    min-width: 580px;
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    color:  #388e3c;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    transition: color 0.2s;
+}
+
+li:hover {
+    color: #66bb6a;
+    cursor: pointer;
+}
+
+.add-form {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.add-form input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius:  0.75rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.add-form input:focus {
+    border: 1.5px solid #66bb6a;
+}
+
+.add-form button {
+    padding: 0.5rem 1.1rem;
+    background: #388e3c;
+    color: white;
+    border: none;
+    border-radius:  0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.add-form button:hover, .add-form button:focus {
+    background: #66bb6a;
+}
