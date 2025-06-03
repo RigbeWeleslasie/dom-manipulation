@@ -17,10 +17,11 @@ body {
 header {
     text-align: center;
     padding: 2rem 1rem 1rem 1rem;
-    border-bottom-left-radius:  0.75rem;
-    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius:  50rem;
+    border-bottom-right-radius: 50rem;
     box-shadow: 0 2px 6px rgba(56, 142, 60, 0.08);
-    color: black;
+    color:whitesmoke;
+    
 }
 
 #title {
@@ -47,26 +48,50 @@ main {
 
 .lists {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 800px;
     justify-content: center;
 }
 
 .list-container {
+    
+    border-radius:  0.75rem;
+    box-shadow: 0 4px 16px rgba(56, 142, 60, 0.07);
+    padding: 1rem 1rem 1rem 1rem;
+    min-width: 280px;
+    max-width: 520px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-fruits{
+     background: #fff;
+    border-radius:  0.75rem;
+    box-shadow: 0 4px 16px rgba(56, 142, 60, 0.07);
+    padding: 1rem 1rem 1rem 1rem;
+    min-width: 280px;
+    max-width: 520px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-vegetables{
     background: #fff;
     border-radius:  0.75rem;
     box-shadow: 0 4px 16px rgba(56, 142, 60, 0.07);
     padding: 1rem 1rem 1rem 1rem;
     min-width: 280px;
     max-width: 520px;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
 h3 {
     text-transform: uppercase;
     color:  #388e3c;

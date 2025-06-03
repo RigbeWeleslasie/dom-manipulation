@@ -3,6 +3,8 @@
 document.body.style.backgroundColor='silver';
 // Change the background of the title 
 document.getElementById('title').style.color='green';
+document.getElementById('title').style.fontSize='5rem';
+document.getElementById('title').style.padding='5rem';
 // Capitalize the header 3 tag elements
 const h3Elements=document.getElementsByTagName('h3');
 for(let h3 of h3Elements){
@@ -55,20 +57,27 @@ function addVegetable(event) {
     }
 }
 
-window.onload = function() {
+
     const header = document.querySelector('header');
-    if (header) {
-        header.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Vegetables.jpg')";
+   
+        header.style.backgroundImage = "url('https://media.istockphoto.com/id/1203599923/photo/food-background-with-assortment-of-fresh-organic-vegetables.jpg?s=612x612&w=0&k=20&c=DZy1JMfUBkllwiq1Fm_LXtxA4DMDnExuF40jD8u9Z0Q=')";
         header.style.backgroundSize = 'cover';
         header.style.backgroundPosition = 'center';
         header.style.backgroundRepeat = 'no-repeat';
         header.style.minHeight = '250px'; 
-        
-    }
-};
+        header.style.color='whitesmoke';
+        header.style.backgroundImage = ` linear-gradient(to top,  rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.9) 90%,  rgba(0,0,0,0.5) 100%), url('https://media.istockphoto.com/id/1203599923/photo/food-background-with-assortment-of-fresh-organic-vegetables.jpg?s=612x612&w=0&k=20&c=DZy1JMfUBkllwiq1Fm_LXtxA4DMDnExuF40jD8u9Z0Q=')`;
+      
+       
+//  const footer=document.querySelector('footer');
+//         footer.style.textAlign='center'
+//         footer.style.backgroundImage = "url('https://media.istockphoto.com/id/1203599923/photo/food-background-with-assortment-of-fresh-organic-vegetables.jpg?s=612x612&w=0&k=20&c=DZy1JMfUBkllwiq1Fm_LXtxA4DMDnExuF40jD8u9Z0Q=')";
+//         footer.style.backgroundSize = 'cover';
+//         footer.style.backgroundPosition = 'center';
+//         footer.style.backgroundRepeat = 'no-repeat';
+//         footer.style.minHeight = '250px'; 
+//         footer.style.color='whitesmoke';
+//         footer.style.backgroundImage = ` linear-gradient(to top,  rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.5) 90%,  rgba(0,0,0,0.5) 100%), url('https://media.istockphoto.com/id/1203599923/photo/food-background-with-assortment-of-fresh-organic-vegetables.jpg?s=612x612&w=0&k=20&c=DZy1JMfUBkllwiq1Fm_LXtxA4DMDnExuF40jD8u9Z0Q=')`;
+//         footer.style.borderTopLeftRadius = '50rem';
+//         footer.style.borderTopRightRadius = '50rem';
 
-var img = document.createElement('img');
-img.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Vegetables.jpg';
-img.alt = 'Vegetables';
-img.style.width = '400px'; 
-document.body.appendChild(img);
