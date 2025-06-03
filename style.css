@@ -15,17 +15,17 @@ body {
 }
 
 header {
-   
     text-align: center;
     padding: 2rem 1rem 1rem 1rem;
     border-bottom-left-radius:  0.75rem;
     border-bottom-right-radius: 0.75rem;
     box-shadow: 0 2px 6px rgba(56, 142, 60, 0.08);
+    color: black;
 }
 
 #title {
     font-size: 2.5rem;
-    color: #fff;
+    color:black;
     margin: 0;
     letter-spacing: 1px;
     font-weight: 700;
@@ -47,7 +47,7 @@ main {
 
 .lists {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     flex-wrap: wrap;
     width: 100%;
     max-width: 800px;
@@ -58,13 +58,13 @@ main {
     background: #fff;
     border-radius:  0.75rem;
     box-shadow: 0 4px 16px rgba(56, 142, 60, 0.07);
-    padding: 2rem;
-    min-width: 580px;
-    max-width: 320px;
+    padding: 1rem 1rem 1rem 1rem;
+    min-width: 280px;
+    max-width: 520px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 h3 {
@@ -123,9 +123,19 @@ li:hover {
     font-weight: 700;
     cursor: pointer;
     font-size: 1rem;
-    transition: background 0.2s;
+   
 }
 
 .add-form button:hover, .add-form button:focus {
     background: #66bb6a;
 }
+
+@media (max-width: 800px)and(min-width:400px) {
+main {
+    flex-direction: column;
+}
+.add-form{
+    flex-direction: column;
+}
+  }
+
