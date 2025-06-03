@@ -9,6 +9,10 @@ document.getElementById('title').style.padding='5rem';
 const h3Elements=document.getElementsByTagName('h3');
 for(let h3 of h3Elements){
     h3.style.textTransform='uppercase';
+    h3.style.color=' #388e3c';
+    h3.style.marginBottom='1rem';
+    h3.style.fontSize='1.25rem';
+    h3.style.letterSpacing='2px';
     }
 // adding fruits by calling with it's id
 const fruList=document.getElementById('fruList');
@@ -57,7 +61,7 @@ function addVegetable(event) {
     }
 }
 
-
+// Styling header
     const header = document.querySelector('header');
    
         header.style.backgroundImage = "url('https://media.istockphoto.com/id/1203599923/photo/food-background-with-assortment-of-fresh-organic-vegetables.jpg?s=612x612&w=0&k=20&c=DZy1JMfUBkllwiq1Fm_LXtxA4DMDnExuF40jD8u9Z0Q=')";
@@ -67,17 +71,53 @@ function addVegetable(event) {
         header.style.minHeight = '250px'; 
         header.style.color='whitesmoke';
         header.style.backgroundImage = ` linear-gradient(to top,  rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.9) 90%,  rgba(0,0,0,0.5) 100%), url('https://media.istockphoto.com/id/1203599923/photo/food-background-with-assortment-of-fresh-organic-vegetables.jpg?s=612x612&w=0&k=20&c=DZy1JMfUBkllwiq1Fm_LXtxA4DMDnExuF40jD8u9Z0Q=')`;
-      
+        header.style.borderBottomLeftRadius = '50rem';
+        header.style.borderBottomRightRadius = '50rem';
+        header.style.textAlign='Center';
+
+
+
+
+
+
+function makeResponsive() {
+    const lists = document.querySelector('.lists');
+    const fruit = document.querySelector('.list-fruits');
+    const veg = document.querySelector('.list-vegetables');
+    const title = document.getElementById('title');
+    const subtitle = document.querySelector('.subtitle');
+    if (window.innerWidth < 700) {
        
-//  const footer=document.querySelector('footer');
-//         footer.style.textAlign='center'
-//         footer.style.backgroundImage = "url('https://media.istockphoto.com/id/1203599923/photo/food-background-with-assortment-of-fresh-organic-vegetables.jpg?s=612x612&w=0&k=20&c=DZy1JMfUBkllwiq1Fm_LXtxA4DMDnExuF40jD8u9Z0Q=')";
-//         footer.style.backgroundSize = 'cover';
-//         footer.style.backgroundPosition = 'center';
-//         footer.style.backgroundRepeat = 'no-repeat';
-//         footer.style.minHeight = '250px'; 
-//         footer.style.color='whitesmoke';
-//         footer.style.backgroundImage = ` linear-gradient(to top,  rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.5) 90%,  rgba(0,0,0,0.5) 100%), url('https://media.istockphoto.com/id/1203599923/photo/food-background-with-assortment-of-fresh-organic-vegetables.jpg?s=612x612&w=0&k=20&c=DZy1JMfUBkllwiq1Fm_LXtxA4DMDnExuF40jD8u9Z0Q=')`;
-//         footer.style.borderTopLeftRadius = '50rem';
-//         footer.style.borderTopRightRadius = '50rem';
+        lists.style.flexDirection = 'column';
+        lists.style.gap = '1rem';
+        fruit.style.width = '100%';
+        veg.style.width = '100%';
+        fruit.style.maxWidth = '100%';
+        veg.style.maxWidth = '100%';
+        fruit.style.minWidth = '0';
+        veg.style.minWidth = '0';
+        title.style.fontSize = '2.2rem';
+        title.style.padding = '2rem 0.5rem';
+        subtitle.style.fontSize = '1rem';
+    
+        
+    } else {
+        lists.style.flexDirection = 'row';
+        lists.style.gap = '2rem';
+        fruit.style.width = '50%';
+        veg.style.width = '50%';
+        fruit.style.maxWidth = '520px';
+        veg.style.maxWidth = '520px';
+        fruit.style.minWidth = '280px';
+        veg.style.minWidth = '280px';
+        title.style.fontSize = '5rem';
+        title.style.padding = '5rem';
+        subtitle.style.fontSize = '1.25rem';
+
+    }
+}
+window.addEventListener('DOMContentLoaded', makeResponsive);
+window.addEventListener('resize', makeResponsive);
+
+
 
